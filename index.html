@@ -5,8 +5,8 @@
     <title>Čeští a slovenští prezidenti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      table.presidents {width: 100%;}
-      .presidents th, .presidents td {border: 1px solid gray; padding: 5px;}
+      table.presidents {width: 100%; border-collapse: collapse;}
+      .presidents th, .presidents td {border: 1px solid gray; padding: 5px; text-align: left;}
       .presidents th {font-weight: 700; text-align: center;}
       .presidents td {font-weight: 400;}
       .presidents .komuniste {background-color: #c74d4d; color: yellow;}
@@ -14,6 +14,9 @@
       .presidents .roky {background-color: #D7CCC8;}
       .presidents .cr {background-color: #90CAF9;}
       .presidents .sr {background-color: #F8BBD0;}
+      .presidents .bez {background-color: white; color: grey;}
+      thead {border-bottom: 3px solid black;}
+      tfoot {border-top: 3px solid black;}
     </style>
   </head>
   <body>
@@ -30,15 +33,54 @@
         </tr>
       </thead>
       <tbody class="komuniste">
-
+        <tr>
+          <th>1975</th>
+          <th>1989</th>
+          <th colspan="2">Gustav Husák</th>
+          <th></th>
+        </tr>
       </tbody>
       <tbody class="spolecne">
-
+        <tr>
+          <th>1989</th>
+          <th>1990</th>
+          <th colspan="2" rowspan="2">Václav Havel</th>
+          <th></th>
+        </tr>
+        <tr>
+          <th>1990</th>
+          <th>1992</th>
+          <th></th>
+        </tr>
       </tbody>
       <tbody>
-
+        <tr>
+          <th class="roky">1993</th>
+          <th class="roky">1998</th>
+          <th class="cr" rowspan="3">Václav Havel</th>
+          <th class="sr">Michal Kováč</th>
+          <th></th>
+        </tr>
+        <tr>
+          <th class="roky">1998</th>
+          <th class="roky">1999</th>
+          <th class="bez">bez prezidenta</th>
+          <th></th>
+        </tr>
+        <tr>
+          <th class="roky">1999</th>
+          <th class="roky">2003</th>
+          <th class="sr" rowspan="2">Rudolf Schuster</th>
+          <th></th>
+        </tr>
       </tbody>
-
+      <tfoot>
+        <tr>
+          <th class="roky" colspan="2">Počet</th>
+          <th class="cr">2+3</th>
+          <th class="sr">2+5</th>
+          <th></th>
+        </tr>
       </tfoot>
     </table>
   </body>
