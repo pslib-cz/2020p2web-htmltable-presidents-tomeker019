@@ -7,6 +7,7 @@ Vytvořte a naformátujte tabulku podle vzoru.
 * Kolem každé buňky je slabý okraj.
 * Hlavičkové buňky jsou tučně, datové normální silou písma.
 * Záhlaví a zápatí tabulky je od obsahu odděleno silnou čarou.
+
 * Období vlády komunistického režimu je formátováno jako žlutý text na červeném pozadí (``#c74d4d``). Těchto prezidentů může být i více – tabulka je krácena pro nedostatek času.
 * Období společného československého státu je označeno žlutým textem na modrém pozadí ``#4a4abe``.
 * Doba, kdy na Slovensku nebyl žádný prezident, je psána šedou.
